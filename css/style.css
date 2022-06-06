@@ -44,6 +44,24 @@
     margin-bottom: 0;
 }
 
+.work-title {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.work-text {
+    font-size: 13px;
+    color: #727272;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.work-text:hover {
+    color: var(--red);
+}
+
 .logo-animation {
     animation: rotate_360 2s linear infinite;
 }
