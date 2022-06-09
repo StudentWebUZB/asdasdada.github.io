@@ -43,6 +43,53 @@
     color: #fff;
     margin-bottom: 0;
 }
+.work-title{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.work-text{
+    font-size: 13px;
+    color: #727272;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.phone-icon{
+    font-size: 45px;
+}
+.phone-title{
+    font-size: 14px;
+    color: #616161;
+    margin: 0;
+}
+.phone-text{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid #ffff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon:hover{
+    background: var(--red);
+    border: 1px solid indianred;
+}
+.work-text:hover{
+    color: var(--red)
+}
 
 .work-title {
     font-size: 14px;
@@ -56,44 +103,6 @@
     color: #727272;
     margin-bottom: 0;
     text-decoration: none;
-}
-
-.phone {
-    display: flex;
-    align-items: center;
-}
-
-.phone-icon {
-    font-size: 45px;
-}
-
-
-.phone-title {
-    font-size: 14px;
-    color: #616161;
-    margin: 0;
-}
-
-.phone-text {
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-}
-
-.icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-.icon:hover {
-    background: var(--red);
-    border-color: var(--red);
 }
 
 .work-text:hover {
