@@ -43,51 +43,60 @@
     color: #fff;
     margin-bottom: 0;
 }
-.work-title{
+
+.work-title {
     font-size: 14px;
     color: white;
     margin-bottom: 0;
     text-transform: uppercase;
 }
-.work-text{
+
+.work-text {
     font-size: 13px;
     color: #727272;
     margin-bottom: 0;
     text-decoration: none;
 }
-.phone{
+
+.phone {
     display: flex;
     align-items: center;
     color: white;
 }
-.phone-icon{
+
+.phone-icon {
     font-size: 45px;
 }
-.phone-title{
+
+.phone-title {
     font-size: 14px;
     color: #616161;
     margin: 0;
 }
-.phone-text{
+
+.phone-text {
     font-size: 18px;
     color: white;
     text-decoration: none;
 }
-.icon{
+
+.icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border:1px solid #ffff;
+    border: 1px solid #ffff;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.icon:hover{
+
+.icon:hover {
     background: var(--red);
     border: 1px solid indianred;
 }
-.work-text:hover{
+
+.work-text:hover {
     color: var(--red)
 }
 
@@ -165,11 +174,10 @@
 }
 
 
-.custom-dropdown,.nav-item {
+.custom-dropdown, .nav-item {
     position: relative;
     z-index: 2;
 }
-
 
 
 .custom-menu {
@@ -187,6 +195,71 @@
 
 .custom-dropdown:hover .custom-menu {
     display: block;
+}
+
+.carousel-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 45px;
+    position: relative;
+    z-index: 2;
+    padding: 5px 25px;
+}
+
+.carousel-title::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--light-black);
+    top: 0;
+    transform: skewX(-20deg);
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}
+
+
+.carousel-title_2 {
+    color: var(--light-black);
+    text-transform: uppercase;
+    font-size: 45px;
+    position: relative;
+    z-index: 2;
+    padding: 5px 45px;
+}
+
+
+.carousel-title_2::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: white;
+    top: 0;
+    transform: skewX(-20deg);
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}
+
+[aria-current=true].active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 1;
+}
+
+.carousel-indicators button {
+    border: 1px solid #fff!important;
+}
+
+[aria-current=true].active::before {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
 
