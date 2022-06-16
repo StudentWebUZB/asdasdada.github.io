@@ -250,7 +250,7 @@
 }
 
 .carousel-indicators button {
-    border: 1px solid #fff!important;
+    border: 1px solid #fff !important;
 }
 
 [aria-current=true].active::before {
@@ -262,6 +262,106 @@
     border-radius: 50%;
 }
 
+.service {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.service img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-link {
+    background: var(--light-black);
+    position: absolute;
+    width: 75%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 0;
+    color: #fff;
+    z-index: 3;
+}
+
+.service::before {
+    content: "";
+    width: 0;
+    height: 48px;
+    border-top: 48px solid transparent;
+    border-bottom: 48px solid transparent;
+    border-right: 38px solid var(--light-black);
+    position: absolute;
+    left: 0;
+    bottom: -48px;
+    z-index: 3;
+
+}
+
+.service::after {
+    content: "";
+    width: 0;
+    height: 48px;
+    border-top: 48px solid transparent;
+    border-bottom: 48px solid transparent;
+    border-left: 38px solid var(--light-black);
+    position: absolute;
+    right: 1px;
+    bottom: -48px;
+    z-index: 3;
+}
+.service-item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    z-index: 2;
+}
+.service-item:hover{
+    z-index: 4;
+}
+.service-item:hover .service-hover {
+    z-index: 4;
+    opacity: 1;
+}
+
+.service-hover {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.service-hover_bg {
+    background: var(--red);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
 
 @keyframes rotate_360 {
     from {
