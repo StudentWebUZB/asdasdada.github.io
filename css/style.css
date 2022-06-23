@@ -362,6 +362,25 @@
     text-align: center;
 }
 
+.clients {
+    background: #f9f9f9;
+    padding: 80px 0;
+}
+
+.border-red {
+    border: 2px solid var(--red);
+}
+
+.btn-red {
+    text-transform: uppercase;
+    color: white;
+    background: var(--red);
+}
+
+video[poster] {
+    object-fit: cover;
+}
+
 @keyframes rotate_360 {
     from {
         transform: rotate(0);
