@@ -317,7 +317,8 @@
     bottom: -48px;
     z-index: 3;
 }
-.service-item{
+
+.service-item {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -326,12 +327,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow:hidden;
+    overflow: hidden;
     z-index: 2;
 }
-.service-item:hover{
+
+.service-item:hover {
     z-index: 4;
 }
+
 .service-item:hover .service-hover {
     z-index: 4;
     opacity: 1;
@@ -379,6 +382,79 @@
 
 video[poster] {
     object-fit: cover;
+}
+
+.gallery {
+    background-image: url("https://wallpaperaccess.com/full/7280.jpg");
+    padding: 90px 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-carousel {
+    padding-top: 100px;
+}
+
+.gallery-prev,
+.gallery-next {
+    left: unset;
+    right: unset;
+    bottom: unset;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid white;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.gallery-prev:hover,
+.gallery-next:hover {
+    background: var(--red);
+    border-color: var(--red);
+}
+
+.gallery-prev {
+    margin-right: 50px;
+}
+
+.gallery-next {
+    margin-left: 50px;
+}
+
+.gallery-carousel .carousel-inner .carousel-item div {
+    height: 350px;
+    position: relative;
+    z-index: 4;
+}
+
+.gallery-carousel .carousel-inner .carousel-item div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-carousel .carousel-inner .carousel-item div::after {
+    content: "";
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.gallery-carousel .carousel-inner .carousel-item div:hover::after {
+    content: "+";
+    font-size: 80px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: var(--red);
+    top: 0;
+    left: 0;
 }
 
 @keyframes rotate_360 {
