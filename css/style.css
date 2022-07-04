@@ -427,6 +427,7 @@ video[poster] {
     height: 350px;
     position: relative;
     z-index: 4;
+    cursor: pointer;
 }
 
 .gallery-carousel .carousel-inner .carousel-item div img {
