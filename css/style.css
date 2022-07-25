@@ -769,7 +769,7 @@ button:focus {
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     .navbar-toggler {
         position: absolute;
         bottom: 300px;
