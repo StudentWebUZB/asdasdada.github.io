@@ -75,7 +75,7 @@ var object = {
     ussd: "sum"
 }
 
-console.log(object)
+// console.log(object)
 
 object.name = "Samarqand"
 
@@ -86,7 +86,7 @@ object["people"] = 3000000
 // delete object["people"]
 
 
-console.log(object)
+// console.log(object)
 
 
 let array = [30000, 20, 400000, 5000, 20, "adasdasdsa", true]
@@ -108,11 +108,6 @@ array.map((item, key) => {
 for (let x of f) {
     // document.getElementById("news").innerHTML += x + "<br>";
 }
-
-
-
-
-
 
 
 // const result = array.filter(item => item === 20);
@@ -156,6 +151,66 @@ b = 5
 // console.log(x <= y) // Kichik teng
 
 
-console.log(x === y && a !== b)
-console.log(x === y || a !== b)
+// console.log(x === y && a !== b)
+// console.log(x === y || a !== b)
+
+
+/* For sikl */
+// let array_1 = [1, 2, 3, 4, 5, 6, 7]
+//
+// for (let i = 0; i < array_1.length; i++) {
+//     document.getElementById("news").innerHTML += `<p>${array_1[i]}</p>`
+// }
+
+
+let step = 5
+document.getElementById("step").innerText = "Sizninig urunishngiz: " + step
+
+document.getElementById("get").addEventListener("click", () => {
+    for (let i = 1; i <= step; i++) {
+        if (parseInt(document.getElementById("number").value) === 1111) {
+            document.getElementById("news").innerText = `Siz To'g'ri terdingiz  shuncha urunishda ${step}`
+        } else if (document.getElementById("number").value !== "1111") {
+            if (i === 1) {
+                step = step - i
+                document.getElementById("news").innerText = `Siz noto'g'ri terdingiz `
+                document.getElementById("step").innerText = "Sizninig urunishngiz: " + step
+            } else if (i === 2) {
+                document.getElementById("news").innerText = `Siz noto'g'ri terdingiz `
+                document.getElementById("step").innerText = "Sizninig urunishngiz: " + step
+            } else if (i === 3) {
+                document.getElementById("news").innerText = `Siz noto'g'ri terdingiz `
+                document.getElementById("step").innerText = "Sizninig urunishngiz: " + step
+            } else if (i === 4) {
+                document.getElementById("news").innerText = `Siz noto'g'ri terdingiz `
+                document.getElementById("step").innerText = "Sizninig urunishngiz: " + step
+            } else if (i === 5) {
+                document.getElementById("news").innerText = `Siz To'g'ri terdingiz  shuncha urunishda ${step}`
+            }
+
+        }
+
+
+        /* if (document.getElementById("number").value !== 1111) {
+             switch (i) {
+                 case 1:
+                 case 2:
+                 case 3:
+                 case 4:
+                     step = step - i
+                     document.getElementById("step").innerText = step
+                     document.getElementById("news").innerText = `Siz noto'g'ri terdingiz `
+                     continue
+                 case 5:
+                     document.getElementById("news").innerText = `Siz To'g'ri terdingiz  shuncha urunishda ${step}`
+                     break
+                 default:
+                     console.log("Raqamni belgilang")
+             }
+         }*/
+    }
+})
+
+
+
 
